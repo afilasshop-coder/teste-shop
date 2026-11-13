@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f7f4">
+    <meta
+      name="description"
+      content="Conheça nossa seleção de produtos e compre com facilidade."
+    >
+    <title>Afilas Shop</title>
+    <link rel="icon" type="image/svg+xml" href="logo-sacola.svg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="config/catalogs.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="inicio">
+      <a class="brand" href="#inicio" aria-label="Afilas Shop, início">
+        <img class="brand-mark" src="logo-sacola.svg" alt="" aria-hidden="true">
+        <span class="brand-name">Afilas <span class="brand-light">Shop</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Navegação principal">
+        <a href="#inicio" aria-current="page">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contatos">Contatos</a>
+        <a href="#affiliate-notice">Sobre</a>
+      </nav>
+      <div class="header-actions">
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="header-cta" href="#produtos">Ver produtos <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">FEITO PARA VOCÊ</p>
+          <h1 id="hero-title">Encontre algo <span>especial.</span></h1>
+          <p class="hero-description">
+            Uma seleção feita com carinho. Explore a vitrine e fale com a gente
+            para garantir o seu.
+          </p>
+          <a class="primary-button" href="#produtos">Explorar produtos <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-decoration" aria-hidden="true">
+          <span class="decoration-circle"></span>
+          <span class="decoration-spark">✳</span>
+          <span class="decoration-label">SUA PRÓXIMA<br>DESCOBERTA</span>
+        </div>
+      </section>
+
+      <section class="catalog" id="produtos" aria-labelledby="catalog-title">
+        <div class="catalog-heading">
+          <div>
+            <p class="eyebrow">NOSSA VITRINE</p>
+            <h2 id="catalog-title">Escolha o seu favorito</h2>
+          </div>
+          <label class="search-box">
+            <span class="visually-hidden">Buscar produtos</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="search" type="search" placeholder="Buscar produto..." autocomplete="off">
+          </label>
+        </div>
+
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div class="catalog-list" id="catalog-list" aria-live="polite" aria-busy="true"></div>
+        <nav class="pagination" id="pagination" aria-label="Paginação de produtos" hidden></nav>
+        <div class="status-message" id="status-message" role="status" hidden></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <section class="affiliate-notice" id="affiliate-notice" aria-labelledby="affiliate-title">
+          <p class="eyebrow">SOBRE A AFILAS SHOP</p>
+          <div class="footer-about">
+            <h2 class="footer-about-title" id="affiliate-title">Encontre produtos e compare ofertas.</h2>
+            <p class="footer-about-copy">A Afilas Shop reúne produtos de diferentes lojas para ajudar você a encontrar boas opções. Ao escolher um produto, você segue para o site da loja para conferir a oferta e concluir a compra.</p>
+          </div>
+          <div class="affiliate-details">
+            <h3>Links de afiliados e compras</h3>
+            <p>Alguns links podem ser de afiliados. Se você comprar por eles, a Afilas Shop poderá receber uma comissão, sem custo adicional para você. Este site é uma vitrine de busca e não realiza vendas nem processa pagamentos.</p>
+            <p>Preços, estoque, pagamento, entrega, trocas, garantias e atendimento são definidos pela loja onde a compra é concluída. Confira as condições diretamente no site da loja antes de comprar.</p>
+          </div>
+        </section>
+        <aside class="footer-sidebar">
+          <section class="footer-contacts" id="contatos" aria-labelledby="footer-contacts-title">
+            <h2 id="footer-contacts-title">Contatos</h2>
+            <ul class="footer-contact-list">
+              <li>
+                <span class="footer-contact-icon is-gmail" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <path d="m4 7 8 6 8-6"></path>
+                  </svg>
+                </span>
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=afilasshop@gmail.com" target="_blank" rel="noopener noreferrer">Gmail</a>
+              </li>
+              <li>
+                <span class="footer-contact-icon is-instagram" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle class="contact-icon-dot" cx="17.7" cy="6.4" r="1"></circle>
+                  </svg>
+                </span>
+                <a href="https://www.instagram.com/afilasshop/" target="_blank" rel="noopener noreferrer">Instagram</a>
+              </li>
+              <li>
+                <span class="footer-contact-icon is-tiktok" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M14 3v11.1a4.4 4.4 0 1 1-3.5-4.3v3.4a1.2 1.2 0 1 0 .4.9V3h3.1c.2 2.3 1.5 3.7 4 4v3.2A8 8 0 0 1 14 8.7"></path>
+                  </svg>
+                </span>
+                <a href="https://www.tiktok.com/@afilasshop" target="_blank" rel="noopener noreferrer">TikTok</a>
+              </li>
+            </ul>
+          </section>
+          <a class="brand footer-featured-brand" href="#inicio" aria-label="Afilas Shop, voltar ao início">
+            <img class="brand-mark" src="logo-sacola.svg" alt="" aria-hidden="true">
+            <span class="brand-name">Afilas <span class="brand-light">Shop</span></span>
+          </a>
+        </aside>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Afilas Shop</p>
+        <a class="back-to-top" href="#inicio" aria-label="Voltar ao início">↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
